@@ -57,6 +57,16 @@ class NotebooksTableViewController: CoreDataTableViewController{
                 
                 fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false), NSSortDescriptor(key:"text", ascending: true)]
                 
+                // Find the notebook
+                let ip = tableView.indexPathForSelectedRow!
+                let nb = fetchedResultsController?.objectAtIndexPath(ip) as! Notebook
+                
+                // Crate the predicate
+                let p = NSPredicate(format: "notebook = %@", argumentArray: [nb])
+                
+                // Add predicate to the fetchrequest
+                fr.predicate = p
+                
                 // Create FetchedRequestController
                 let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: fetchedResultsController!.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
                 
