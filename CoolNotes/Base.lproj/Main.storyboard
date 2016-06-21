@@ -47,7 +47,13 @@
                             <outlet property="delegate" destination="gZM-aX-RS9" id="Aiy-xb-IX5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dsH-4z-kAg"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="dsH-4z-kAg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Lx-2f-3gV">
+                            <connections>
+                                <action selector="addNoteBtnAction:" destination="gZM-aX-RS9" id="Ccq-Sc-BqD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfG-RX-H6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +91,13 @@
                             <outlet property="delegate" destination="jC4-XY-SA2" id="Oem-HT-Gli"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notes View Controller" id="eFn-l8-Ibh"/>
+                    <navigationItem key="navigationItem" title="Notes View Controller" id="eFn-l8-Ibh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Qa-2a-gpt">
+                            <connections>
+                                <action selector="addNoteBtnAction:" destination="jC4-XY-SA2" id="Olb-xn-adg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5X-JE-F7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

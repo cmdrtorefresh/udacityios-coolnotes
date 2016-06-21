@@ -11,6 +11,11 @@ import CoreData
 
 class NotebooksTableViewController: CoreDataTableViewController{
 
+    @IBAction func addNoteBtnAction(sender: AnyObject) {
+        let nb = Notebook(name: "A new Notebook", context: fetchedResultsController!.managedObjectContext)
+         print ("Created a new notebook: \(nb)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,6 +77,7 @@ class NotebooksTableViewController: CoreDataTableViewController{
                 
                 // Inject it into the notesVC
                 notesVC.fetchedResultsController = fc
+                notesVC.nb = nb
             }
         }
     }

@@ -11,6 +11,14 @@ import CoreData
 
 class NotesViewController: CoreDataTableViewController {
     
+    var nb: Notebook!
+    
+    @IBAction func addNoteBtnAction(sender: AnyObject) {
+        let n = Note(text: "A new note", context: fetchedResultsController!.managedObjectContext)
+        n.notebook = nb
+        print ("Created a new note: \(n)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
