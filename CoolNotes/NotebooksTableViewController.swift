@@ -47,6 +47,24 @@ class NotebooksTableViewController: CoreDataTableViewController{
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier! == "displayNote" {
+            if let notesVC = segue.destinationViewController as? NotesViewController {
+                
+                // Create Fetch Request
+                let fr = NSFetchRequest(entityName: "Note")
+                
+                fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false), NSSortDescriptor(key:"text", ascending: true)]
+                
+                // Create FetchedRequestController
+                let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: fetchedResultsController!.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+                
+                // Inject it into the notesVC
+                notesVC.fetchedResultsController = fc
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

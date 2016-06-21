@@ -18,11 +18,11 @@
 		22E8271D1D17676900E5D43F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8271C1D17676900E5D43F /* CoreDataStack.swift */; };
 		22E827271D177A8000E5D43F /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E827261D177A8000E5D43F /* CoreDataTableViewController.swift */; };
 		22E827291D177B0000E5D43F /* NotebooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E827281D177B0000E5D43F /* NotebooksTableViewController.swift */; };
-		22E8272B1D178E3600E5D43F /* dump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8272A1D178E3600E5D43F /* dump.swift */; };
 		22E827301D178EF000E5D43F /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8272C1D178EF000E5D43F /* Notebook+CoreDataProperties.swift */; };
 		22E827311D178EF000E5D43F /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8272D1D178EF000E5D43F /* Notebook.swift */; };
 		22E827321D178EF000E5D43F /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8272E1D178EF000E5D43F /* Note+CoreDataProperties.swift */; };
 		22E827331D178EF000E5D43F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8272F1D178EF000E5D43F /* Note.swift */; };
+		22E827371D17926600E5D43F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E827361D17926600E5D43F /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +60,11 @@
 		22E8271C1D17676900E5D43F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		22E827261D177A8000E5D43F /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		22E827281D177B0000E5D43F /* NotebooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksTableViewController.swift; sourceTree = "<group>"; };
-		22E8272A1D178E3600E5D43F /* dump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dump.swift; sourceTree = "<group>"; };
 		22E8272C1D178EF000E5D43F /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataProperties.swift"; path = "../Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22E8272D1D178EF000E5D43F /* Notebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notebook.swift; path = ../Notebook.swift; sourceTree = "<group>"; };
 		22E8272E1D178EF000E5D43F /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "../Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22E8272F1D178EF000E5D43F /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Note.swift; sourceTree = "<group>"; };
+		22E827361D17926600E5D43F /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,6 @@
 				222CF0921D14B88300DAA376 /* Assets.xcassets */,
 				222CF0941D14B88300DAA376 /* LaunchScreen.storyboard */,
 				222CF0971D14B88300DAA376 /* Info.plist */,
-				22E8272A1D178E3600E5D43F /* dump.swift */,
 			);
 			path = CoolNotes;
 			sourceTree = "<group>";
@@ -156,6 +155,7 @@
 				222CF0B91D14B8B300DAA376 /* Model.xcdatamodeld */,
 				22E8271C1D17676900E5D43F /* CoreDataStack.swift */,
 				22E827281D177B0000E5D43F /* NotebooksTableViewController.swift */,
+				22E827361D17926600E5D43F /* NotesViewController.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,10 +293,10 @@
 			files = (
 				22E827301D178EF000E5D43F /* Notebook+CoreDataProperties.swift in Sources */,
 				222CF08E1D14B88300DAA376 /* ViewController.swift in Sources */,
+				22E827371D17926600E5D43F /* NotesViewController.swift in Sources */,
 				222CF08C1D14B88300DAA376 /* AppDelegate.swift in Sources */,
 				22E827291D177B0000E5D43F /* NotebooksTableViewController.swift in Sources */,
 				22E827311D178EF000E5D43F /* Notebook.swift in Sources */,
-				22E8272B1D178E3600E5D43F /* dump.swift in Sources */,
 				222CF0BB1D14B8B300DAA376 /* Model.xcdatamodeld in Sources */,
 				22E827331D178EF000E5D43F /* Note.swift in Sources */,
 				22E8271D1D17676900E5D43F /* CoreDataStack.swift in Sources */,
